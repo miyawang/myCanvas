@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#xxx {
+    background: #ccc;
+    display: block;
+    /* height: 100vh; */
+}
+button{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
