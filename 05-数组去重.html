@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>数组去重</title>
+</head>
+<body>
+  <script>
+    // var arr = [1,2,3,4,2];
+    // var arrNew =[];
+    // for(var i = 0; i < arr.length; i++){
+    //   var flag = false;
+    //   for(var j = 0; j < arr.length; j++){
+    //     if(arr[i] == arrNew[j]){
+    //       flag = true;
+    //       break;
+    //     }
+    //   }
+    //   if (flag == false) {
+    //     arrNew.push(arr[i]);
+    //   }
+    // }
+    // console.log(arrNew);
+
+    // var arr = [1,2,3,4,3,2];
+    // var arrNew = [];
+    // for(var i = 0; i < arr.length; i++){
+    //   var flag = false;
+    //   for(j = 0; j < arr.length; j++){
+    //     if (arr[i] == arrNew[j]) {
+    //       // return true;
+    //       flag = true;
+    //       break;
+    //     }
+    //   }
+    //   // return false;
+    //   if (flag == false) {
+    //     arrNew.push(arr[i]);
+    //   }
+    // }
+    // console.log(arrNew);
+
+    // var arr = [1,2,5,3,2];
+    // var arrNew = [];
+    // for(var i = 0; i < arr.length; i++){
+    //   var flag = 0;
+    //   for(var j = 0; j < arr.length; j++){
+    //     if (arr[i] == arrNew[j]) {
+    //       flag = 1;
+    //       break;
+    //     }
+    //   }
+    //   if (flag == 0) {
+    //     arrNew.push(arr[i]);
+    //   }
+    // }
+    // console.log(arrNew);
+    
+    var arr = [1,2,3,2];
+    var arrNew = [];
+    for(var i = 0; i < arr.length; i++){
+      var flag = false;
+      for(var j = 0; j < arr.length; j++){
+        if (arr[i] == arrNew[j]) {
+          flag = true;
+          break;
+        }
+      }
+      if (flag == false) {
+        arrNew.push(arr[i]);
+      }
+    }
+    console.log(arrNew);
+    
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>数组中是否包含某个值</title>
+</head>
+
+<body>
+  <script>
+    //   function isContain(arr,num){
+    //     var flag = false;
+    //     for(var i = 0; i < arr.length; i++){
+    //       if (arr[i] == num) {
+    //         flag = true;
+    //         // return true;
+    //         break;
+    //       }
+    //     }
+    //     return flag;
+    //   }
+    //   var result = isContain([1,2,4,6,2,4],3);
+    //   console.log(result);
+
+    //   // 封装一个函数，用于数组去重
+
+    //   function removeEqual(arr) {
+    //     var newArr = [];
+    //     for(var i = 0; i < arr.length; i++){
+    //       var result = isContain(newArr,arr[i]);
+    //       if (result === false) {
+    //         newArr.push(arr[i]);
+    //       }
+    //     }
+    //     return newArr;
+    //   }
+    // var result = removeEqual([1,2,3,4,5,6,2,3,4]);
+    // console.log(result);
+
+    // function isContain(arr,value) {
+    //   var flag = false;
+    //   for(var i = 0; i < arr.length; i++){
+    //     if (arr[i] == value) {
+    //       flag = true;
+    //       break;
+    //     }
+    //   }
+    //   return flag;
+    // }
+    // function rmvEqual(arr) {
+    //   var newArr = [];
+    //   for(var i = 0; i < arr.length; i++){
+    //     var result = isContain(newArr,arr[i]);
+    //     if (result == false) {
+    //       newArr.push(arr[i]);
+    //     }
+    //   }
+    //   return newArr;
+    // }  
+    // var result = rmvEqual([1,2,3,2,5,3]);
+    // console.log(result);
+
+    //   function isContain(arr, value) {
+    //     var flag = false;
+    //     for (var i = 0; i < arr.length; i++) {
+    //       if (arr[i] == value) {
+    //         flag = true;
+    //         break;
+    //       }
+    //     }
+    //     return flag;
+    //   }
+    //   function rmvEqual(arr) {
+    //     var newArr = [];
+    //     for(var i = 0; i < arr.length; i++){
+    //       var result = isContain(newArr,arr[i]);
+    //       if (result == false) {
+    //         newArr.push(arr[i]);
+    //       }
+    //     }
+    //     return newArr;
+    //   }
+    //   var result = rmvEqual([1,2,3,4,2,3,6]);
+    //   console.log(result);
+
+    // // 匿名函数自调用
+
+    // (function () {  })();
+
+    function isContain(arr, value) {
+      for (var i = 0; i < arr.length; i++) {
+        if (arr[i] == value) {
+          return true;
+          // break;        
+        }
+      }
+      return false;
+    }
+
+    function rmvEqual(arr) {
+      var newArr = [];
+      for (var i = 0; i < arr.length; i++) {
+        var result = isContain(newArr, arr[i]);
+        if (result == false) {
+          newArr.push(arr[i]);
+        }
+      }
+      return newArr;
+    }
+    var result = rmvEqual([1, 2, 2, 1, 5, 6]);
+    console.log(result);
+
+  </script>
+</body>
+
+</html>

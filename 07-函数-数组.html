@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>函数-数组</title>
+</head>
+
+<body>
+  <script>
+    // 求任意数组中的最大值
+
+    // function getMax(arr){
+    //   var max = arr[0];
+    //   for(var i = 0; i <= arr.length; i++){
+    //     if (arr[[i]] > max) {
+    //       max = arr[i];
+    //     }
+    //   }
+    //   return max;
+    // }
+    // var result = getMax([1,2,3,2,21,12]);
+    // console.log(result);
+
+    // 求数组中的最小值
+    // function getMin(arr) {
+    //   var min = arr[0];
+    //   for(var i = 0; i < arr.length; i++){
+    //     if (arr[i] < min) {
+    //       min = arr[i];
+    //     }
+    //   }
+    //   return min;
+    // }
+    // var result = getMin([1,2,0,9]);
+    // console.log(result);
+
+    // 翻转任意数组，返回一个新的数组
+
+    // function getReverse(arr) {
+    //   var arrNew = [];
+    //   for(var i = arr.length - 1; i>= 0; i--){
+    //     arrNew.push(arr[i]);
+    //   }
+    //   return arrNew;
+    // }
+    // var result = getReverse([1,4,7,3]);
+    // console.log(result);
+    
+    // 冒泡排序
+
+    function sortBubble(arr) {
+      for(var i = 0; i < arr.length - 1; i++){
+        var count = 0;
+        for(var j = 0; j < arr.length - 1 - i; j++){
+          if (arr[j] > arr[j+1]) {
+            count++;
+            var temp = arr[j];
+            arr[j] = arr[j+1];
+            arr[j+1] = temp;
+          }
+        }
+        if (count == 0) {
+          break;
+        }
+      }
+      return arr;
+    }
+    var result = sortBubble([1,5,2,8,3,9]);
+    console.log(result);
+    
+
+
+
+  </script>
+</body>
+
+</html>
