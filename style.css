@@ -6,6 +6,7 @@
     background: #ccc;
     display: block;
     /* height: 100vh; */
+    /* margin: 0 auto; */
 }
 button{
     position: fixed;

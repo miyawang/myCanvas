@@ -7,8 +7,8 @@ window.onresize = function() {
 function setCanvasSize() {
   var pageWidth = document.documentElement.clientWidth;
   var pageHeight = document.documentElement.clientHeight;
-  yyy.width = pageWidth;
-  yyy.height = pageHeight;
+  // yyy.width = pageWidth;
+  // yyy.height = pageHeight;
 }
 
 // 监听
